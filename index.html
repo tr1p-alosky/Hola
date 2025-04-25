@@ -2,121 +2,94 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="width-device-widht, initial-scale-1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Redessociales.css">
-    <title> Redes sociales </title>
+    <title>Redes sociales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* Fondo general */
+        .fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('PaginaF1YBarca/fondo.jpg'); /* <-- cambiá esto por tu imagen */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4; /* Cambiá esto si querés que se vea más o menos */
+            z-index: -1;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+            font-family: 'Kristen ITC', cursive;
+            text-align: center;
+        }
+
+        #boton1, #boton2, #boton3 {
+            border-radius: 10%;
+            background-color: rgb(245, 144, 231);
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+            padding: 30px 50px;
+            margin: 40px auto;
+            font-family: 'Kristen ITC', cursive;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .resolución {
+            width: 300%;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            .desktop, .tablet {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            .desktop, .movil {
+                display: none;
+            }
+        }
+
+        @media (min-width: 991px) {
+            .tablet, .movil {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-     <div class="resolucion"></div>
-    <div class="desktop"></div>
-    <div class="tablet"></div>
-    <div class="movil"></div>
-<style>
-.resolucion{
-        width: 99%;
-        text-align: center;
-    }
-    @media (max-width: 767px) {
-    .desktop{
-     display: none;
-    }
-    .tablet{
-     display: none;
-    }
+    <div class="fondo"></div>
 
-}
-@media (min-width: 768px) and (max-width: 990px){
-   .desktop{
-       display: none;
-    }
-   
-    .movil{
-        display: none;
-    }
-}
-@media (min-width: 991px) {
-   
-    .tablet{
-   display: none;
-    }
-    .movil{
-    display: none;
-    }
-}
+    <h1>¡Síguenos<br>en nuestras<br>redes!</h1>
 
-h1{
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    font-family: Kristen ITC;
-    
+    <span id="boton1">
+        <i class="fa-brands fa-facebook"></i>
+        <a href="https://www.facebook.com/Gigisplayhousemexico/?locale=es_LA" target="_blank">Facebook</a>
+    </span>
 
-}
-#boton1 {
-    border-radius: 10%;
-    background-color: rgb(245, 144, 231);
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 250px;
-    padding: 30px 50px; /* Reduce el padding horizontal */
-    margin: 140px auto;
-    white-space: nowrap; /* Evita el salto de línea */
-    gap: 10px; /* Espacio entre texto e ícono (opcional) */
-    font-family: Kristen ITC;
-}
+    <span id="boton2">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/gigisplayhouse/?hl=en" target="_blank">Instagram</a>
+    </span>
 
-
-#boton2{
-    border-radius: 10%;
-    background-color:rgb(245, 144, 231);
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    justify-content: space-between;
-    padding: 30px 50px;
-    margin: 130px 580px;
-    font-family: Kristen ITC;
-
-}
-#boton3{
-    border-radius: 10%;
-    background-color: rgb(245, 144, 231);
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    justify-content: space-between;
-    padding: 30px 50px;
-    margin: 140px 580px;
-    font-family: Kristen ITC;
-
-}
-img{
-
-  width: 50px;  
-  height: auto;;
-  padding: 0% 100px;
-  
-  
-}
-
-
-</style>
-<h1>¡Siguenos 
-    en nuestras 
-    redes!</h1>
-
-   
-
-<span id="boton1"> <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/Gigisplayhousemexico/?locale=es_LA" target="_blank">Facebook</a> </span>
-<span id="boton2"> <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/gigismex/" target="_blank"> Instagram </a>  </span>
-<span id="boton3"> <i class="fa-brands fa-whatsapp"></i> <a href="tel:+524422003403" target="_blank"> Contactanos </a> </span>
-
-
+    <span id="boton3">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://www.facebook.com/Gigisplayhousemexico/?locale=es_LA" target="_blank">Contáctanos</a>
+    </span>
 </body>
 </html>
