@@ -2,17 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width-device-widht, initial-scale-1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Redessociales.css">
     <title> Redes sociales </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+     <div class="resolución"></div>
     <div class="desktop"></div>
     <div class="tablet"></div>
     <div class="movil"></div>
 <style>
+.resolución{
+        width: 99%;
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+    .desktop{
+     display: none;
+    }
+    .tablet{
+     display: none;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 990px){
+   .desktop{
+       display: none;
+    }
+   
+    .movil{
+        display: none;
+    }
+}
+@media (min-width: 991px) {
+   
+    .tablet{
+   display: none;
+    }
+    .movil{
+    display: none;
+    }
+}
 
 h1{
     display: flex;
